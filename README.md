@@ -6,14 +6,13 @@
 
 # Easy Time
 
-Tired of getting help performing math with time?  Look no further.  This Template extension for home assistant makes time easy calculations easy!
+Втомилися від допомоги у виконанні математики з часом? Не шукайте далі. Це розширення шаблону для домашнього помічника полегшує обчислення часу!
 
 # Installation
 
-Install this in HACS or download the `easy_time.jinja` from this repository and place the files into your `config\custom_templates` directory.
+Встановіть це в HACS або завантажте `easy_time.jinja` з цього репозиторію та розмістіть файли в каталозі `config\custom_templates`.
 
-After installation, you can edit the first line to set a default language, this will make the macros easier to use in your native language.
-
+Після встановлення ви можете відредагувати перший рядок, щоб установити мову за замовчуванням, це полегшить використання макросів вашою рідною мовою.
 ```
 {%- set default_language = 'en' %}
 ```

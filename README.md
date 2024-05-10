@@ -6,13 +6,13 @@
 
 # Easy Time
 
-Tired of getting help performing math with time?  Look no further.  This Template extension for home assistant makes time easy calculations easy!
+Втомилися від допомоги у виконанні математики з часом? Не шукайте далі. Це розширення шаблону для домашнього помічника полегшує обчислення часу!
 
 # Installation
 
-Install this in HACS or download the `easy_time.jinja` from this repository and place the files into your `config\custom_templates` directory.
+Встановіть це в HACS або завантажте `easy_time.jinja` з цього репозиторію та розмістіть файли в каталозі `config\custom_templates`.
 
-After installation, you can edit the first line to set a default language, this will make the macros easier to use in your native language.
+Після встановлення ви можете відредагувати перший рядок, щоб установити мову за замовчуванням, це полегшить використання макросів вашою рідною мовою.
 
 ```
 {%- set default_language = 'en' %}
@@ -40,7 +40,7 @@ The current supported languages are:
 
 ## `clock(time_format)`
 
-A simple clock's time.  Using `clock()` without arguments will use your languages settings.
+Простий годинниковий час. Використання `clock()` без аргументів використовуватиме ваші налаштування мови.
 
 Argument | Type | Default | Example | Description
 :-:|:-:|:-:|:-:|---
@@ -60,7 +60,7 @@ Format | Output
 
 ## `clock_icon(hour)`
 
-A simple clock's icon.  Using `clock_icon()` without arguments will produce the current time's clock icon to the nearest half hour.
+Простий значок годинника. Використання `clock_icon()` без аргументів створить піктограму поточного часу з точністю до півгодини.
 
 Argument | Type | Default | Example | Description
 :-:|:-:|:-:|:-:|---
@@ -81,13 +81,13 @@ hour| int | - | `1` | (Optional) Hour of the day.
 
 # Relative Time Macros
 
-Looking for times in the future or the past in your language?  Look no further.  These easy macros will pave the way to the future...
+Шукаєте часу в майбутньому чи минулому вашою мовою? Не шукайте далі. Ці прості макроси прокладуть шлях у майбутнє...
 
-Also, please check out [Relative-Time-Plus](https://github.com/TheFes/relative-time-plus) by TheFes.  It has differnt options for relative time, and it's more flexible than `easy_custom_time`.
+Також перегляньте [Relative-Time-Plus](https://github.com/TheFes/relative-time-plus) від TheFes. Він має різні варіанти відносного часу, і він більш гнучкий, ніж `easy_custom_time`.
 
 ## `easy_time(entity_id_or_time)`
 
-`easy_time` returns the most significant friendly relative time.  For example, if your uptime is 3 hours, 2 minutes, and 1 second, this macro will return `3 hours` in your default language.
+`easy_time` повертає найважливіший дружній відносний час. Наприклад, якщо час безвідмовної роботи становить 3 години, 2 хвилини та 1 секунду, цей макрос поверне «3 години» вашою мовою за умовчанням.
 
 Argument | Type | Default | Example | Description
 :-:|:-:|:-:|:-:|---
